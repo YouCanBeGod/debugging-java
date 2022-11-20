@@ -21,7 +21,7 @@ public class Main {
 
     static void c() {
         System.out.println("Entrou no método c.");
-//        Thread.dumpStack();
+//        Thread.dumpStack(); -Sempre deve ser lido de baixo para cima
         System.out.println("Finalizou o método c.");
     }
 }
