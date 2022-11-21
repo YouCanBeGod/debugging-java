@@ -6,17 +6,17 @@ public class CalculadoraDeMedias {
         Scanner entrada = new Scanner(System.in);
         String[] alunos = {"Camila", "Lucas", "Bruna", "Pedro"};
 
-        int media = calculaMediaTurma(alunos, entrada);
+        double media = calculaMediaTurma(alunos, entrada);
 
-        System.out.printf("Média da turma %d ", media);
+        System.out.printf("Média da turma %.2f ", media);
     }
 
-    public static int calculaMediaTurma(String[] alunos, Scanner scanner) {
+    public static double calculaMediaTurma(String[] alunos, Scanner scanner) {
 
-        int soma = 0;
+        double soma = 0;
         for (String aluno : alunos) {
             System.out.printf("Nota do aluno %s ", aluno);
-            int nota = scanner.nextInt();
+            double nota = scanner.nextInt();
             soma += nota;
         }
 
